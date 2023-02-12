@@ -1,3 +1,308 @@
 @import "nullstyle.scss";
 @import "modules.scss";
 
+.container{
+    background: top no-repeat url(./assets/images/header-background-desktop.png);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 60px 40px 0;
+}
+.heading{
+    @extend %tpl-subtitle;
+    color: #545454;
+    line-height: 130%;
+}
+//header
+header{
+    @include flex(flex,row,space-between,center);
+    width: calc(1200 / 1280 * 100%);
+    height: 60px;
+}
+.logo-section{
+    @include flex(flex,column,space-between,center);
+    height: 100%;
+}
+.logo-title{
+    @include font(Georgia,400,32px);
+    color: $bc-color;  
+    //margin-bottom: 10px;
+}
+.logo-subtitle{
+    @include font($font-aleo,400,13px);
+    color: #fff;
+}
+.nav-links-section{   
+    @include font(Arial,400,15px);
+    color: $light-gray-color;
+    width: calc(443 / 1200 * 100%);
+}
+.nav-links{
+    @include flex(flex,row,space-between,center);
+    cursor: pointer;
+}
+.nav-links-element{
+    &:hover{
+        padding-bottom: 2px;
+        border-bottom: 3px solid $bc-color;
+        transition: all 0.3s;
+    }
+}
+//section-make-friend
+.section-make-friend{
+    @include flex(flex,row,left,center);
+    height: 808px;
+}
+.container-make-friend{
+    @include flex(flex,column,space-between,left);
+    width: calc(460 / 1200 * 100%);
+    height: calc(322 / 808 * 100%);
+}
+.heading-make-friend{
+    @include font(Georgia,400,44px);
+    font-style: normal;
+    line-height: 130%;
+    color: #fff;
+    padding-right: 15%;
+}
+.text-make-friend{
+    @include font(Arial,400,15px);
+    color: $light-gray-color;
+    line-height: 160%;
+}
+.btn-make-friend{
+    width: calc(207 / 460 * 100%);
+    height: calc(52 / 322 *100%);
+    @include font(Georgia,400,17px);
+    background-color: $bc-color;
+    color: #292929;
+    border-radius: 100px;
+}
+//section-about
+.section-about{
+    @include flex(flex,row,center,center);
+    height: 588px;
+}
+.about-text-container{
+    @include flex(flex,column,center,center);
+    width: calc(430 / 1200 * 100%);
+    height: calc(380 / 588 * 100%);
+    margin-left: calc(120 / 1200 * 100%);
+}
+.about-heading{
+    margin-right: 25%;
+}
+.about-text{
+    @include font(Arial,400,15px);
+    color: #4c4c4c;
+    margin-top: 25px;
+    line-height: 130%;
+}
+//section-our-friends
+.section-our-friends{
+    @include flex(flex,column,center,center);
+    height: 877px;
+    position: relative;
+    background-color: #F6F6F6;
+    text-align: center;
+}
+.container-img-our-friends{
+    @include flex(flex,row,space-between,center);
+    width: calc(1000 / 1280 *100%);
+    height: calc(435 / 877 *100%);
+    margin: calc(60 / 877 *100%) 0;
+    overflow: hidden;
+}
+.img-card-container{
+    @include flex(flex,column,space-around,center);
+    height: 100%;
+    width: calc(270 / 1000 * 100%);
+    border-radius: 9px;
+    background-color: #fff;
+}
+.img-card-our-friends{
+   max-width: 250px;
+}
+.name-image{
+    @include font(Georgia,400,20px);
+    color: #292929;
+}
+.btn-learn-more{
+    width: calc(187 / 270 * 100%);
+    height: calc(52 / 435 * 100%);
+    border: 2px solid $bc-color;
+    border-radius: 100px;
+    @include font(Georgia,400,17px);
+    color: #292929;
+    cursor: pointer;
+}
+.btn-arrow{
+    @include flex(flex,column,center,center);
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid $bc-color;
+    cursor: pointer;
+}
+.arrow-left{
+    bottom: 50%;
+    left: 40px;
+}
+.arrow-right{
+    bottom: 50%;
+    right: 40px;
+    transform: rotate(180deg);
+}
+.btn-our-friends{
+    width: calc(261 / 1200 *100%);
+    height: 52px;
+    background-color: $bc-color;
+    border-radius: 100px;
+    color: #292929;
+    @include font(Georgia,400,17px);
+}
+//section-help
+.section-help{
+    @include flex(flex,column,flex-end,center);
+    height: 611px;
+    text-align: center;
+}
+.items-help-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 55px 110px;
+    width: calc(1026 / 1280 *100%);
+    height: calc(281 / 611 * 100%);   
+    margin: 60px 0 100px;
+}
+.img-container{
+    height: 113px;
+    @include flex(flex,column,space-between,center);
+}
+.item-description{
+    @include font(Georgia,400,20px);
+    color: #545454;
+}
+//section-donation
+.section-donation{
+    @include flex(flex,row,center,center);
+    height: 462px;
+    background-color: #F6F6F6;
+}
+.container-donation-text{
+    @include flex(flex,column,space-between,left);
+    width: calc(380 / 1280 * 100%);
+    height: calc(282 / 462 *100%);
+    margin-left: 30px;
+}
+.subtitle-donation{
+    @include font(Georgia,400,15px);
+    color: #545454;
+}
+.credit-card-container{
+    @include flex(flex,row,space-around,center);
+    background-color: $bc-color;
+    border-radius: 9px;
+    padding: 10px 15px;
+}
+.number-card{
+    @include font(Georgia,400,20px);
+    color: #545454;
+}
+.donation-text{
+    @include font(Arial,400,12px);
+    font-style: italic;
+    line-height: 18px;
+    color: #B2B2B2;
+}
+//footer
+footer{
+    @include flex(flex,row,space-between,flex-end);
+    background: bottom no-repeat url(./assets/images/footer-gradient-bg-desktop.png);
+    height: 350px;
+    padding: 0 40px;
+}
+.contact-container,.location-container{
+    @include flex(flex,column,space-between,left);
+    width: calc(300 / 1280 *100%);
+    height: calc(225 / 350 *100%);
+    margin-bottom: 60px;
+}
+.heading-footer{
+    color: #fff;
+}
+.footer-text{
+    @include font(Georgia,400,20px);
+    line-height: 115%;
+    color: $bc-color;
+}
+.footer-icons{
+    margin-right: 10px;
+}
+//modal-window
+.modal-our-friends{
+    width: 100%;
+    height: 100%;
+    @include flex(flex,column,center,center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transition-duration: 0.7s ease;
+    background-color:  rgba(41, 41, 41, 0.6);
+}
+.container-modal-window{
+    width: 75vw;
+    height: 500px;
+    @include flex(flex,row,space-around,center);
+    background-color: #fff;
+    border-radius: 9px;
+}
+.btn-cancel{
+    font-size: 40px;
+    font-weight: 500;
+    transform: rotate(45deg);
+    top: 10%;
+    right: 9%;
+    background-color: transparent;
+}
+.modal-animal-image{
+    width: calc(400 / 900 *100%);
+    height: 90%;
+}
+.description-container{
+    @include flex(flex,column,space-between,left);
+    width: calc(351 / 900 *100%);
+}
+.kind-animal{
+    @include font(Georgia,400,20px);
+}
+.description-animal{
+    @include font(Georgia,400,15px);
+    line-height: 110%;
+    margin: 40px 0;
+}
+.description-list{
+    @include font(Georgia,400,15px);
+}
+.description-items{
+    margin-bottom: 10px;
+}
+.description-items::before {
+    content: "\2022";
+    color: $bc-color;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  //
+  .btn-make-friend,.btn-arrow,.btn-learn-more,.btn-our-friends{
+    &:hover{
+        background-color: $hover-bc-color;
+        transition: all 0.3s;
+    }
+  }
