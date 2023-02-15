@@ -2,26 +2,29 @@ $font-aleo: 'Aleo', serif;
 $font-magra: 'Magra', sans-serif;
 $bc-color: #F1CDB3;
 $hover-bc-color:  #FDDCC4;
-$primary-color: rgba(41, 41, 41, 1);
+$primary-color: rgb(41, 41, 41, 1);
 $second-color: rgba(13, 96, 111, 0.5);
-$dark-color: rgba(84, 84, 84, 1);
+$light-gray-color: #CDCDCD;
+$dark-color: rgb(84, 84, 84, 1);
 $mobile: 390px;
 $tablet:  768px;
 
 @font-face {
   font-family: Georgia;
-  src: url(./assets/fonts/Giorgio-Normal\ Regular.otf);
-  font-weight: 400;
+  src: url(./assets/fonts/georgia-regular.ttf);
 }
-
+@font-face {
+  font-family: Arial;
+  src: url(./assets/fonts/arial.ttf);
+}
 @mixin flex($d,$fd,$jc,$ai) {
   display: $d;
   flex-direction: $fd;
   justify-content: $jc;
   align-items: $ai;
 }
-
-
+// @include flex($d,$fd,$jc,$ai)
+//@include font($ff,$fw,$fs)
 @mixin font($ff,$fw,$fs) {
   font-family: $ff;
   font-weight: $fw;
@@ -33,3 +36,9 @@ $tablet:  768px;
   line-height: 45px;
 }
 
+%tpl-button{
+  @include font(Georgia,400,35px);
+  width: 187px;
+  height: 52px;
+  border-radius: 100px;
+}
