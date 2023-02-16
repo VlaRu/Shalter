@@ -155,11 +155,6 @@ header {
     padding: 30px;
   }
 }
-@media screen and (max-width: 680px) {
-  .header-pets {
-    padding: 30px 10px;
-  }
-}
 @media screen and (max-width: 390px) {
   .header-pets {
     padding: 30px 50px 30px 10px;
@@ -228,7 +223,7 @@ header {
     width: 443px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 551px) {
   .nav-links-section {
     display: none;
   }
@@ -524,7 +519,7 @@ header {
 }
 
 .img-card-our-friends {
-  max-width: 92.5925925926%;
+  max-width: 250px;
 }
 
 .name-image {
@@ -635,6 +630,7 @@ header {
   gap: 0 40px;
   width: 100%;
   height: 69.2995529061%;
+  background-color: #b23e3e;
   margin-top: 4.8387096774%;
 }
 @media screen and (max-width: 768px) {
@@ -642,22 +638,14 @@ header {
     justify-content: space-between;
     width: 81.9209039548%;
     height: 78.7651471437%;
-    gap: 0 5%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .container-img-our-friends-pets {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px 5%;
   }
 }
 @media screen and (max-width: 390px) {
   .container-img-our-friends-pets {
+    flex-direction: row;
     width: 100%;
     height: 82.7774408733%;
-    gap: 13px 0;
-    margin-top: 42px;
+    gap: 20px 0;
   }
 }
 
@@ -667,19 +655,9 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 435px;
-  max-width: 270px;
+  width: 270px;
   border-radius: 9px;
   background-color: #fff;
-}
-@media screen and (max-width: 768px) {
-  .img-card-container-pets {
-    width: 45%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .img-card-container-pets {
-    width: 100%;
-  }
 }
 
 .container-slide-btns {
@@ -691,12 +669,6 @@ header {
   height: 52px;
   border-color: #545454;
   margin-top: 4.8387096774%;
-}
-@media screen and (max-width: 550px) {
-  .container-slide-btns {
-    width: 300px;
-    margin: 45px 10px 0;
-  }
 }
 
 .btn-slide {
@@ -1160,7 +1132,7 @@ footer {
 .burger-container {
   display: none;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
   .burger-container {
     display: flex;
     flex-direction: column;
@@ -1181,4 +1153,4 @@ footer {
   background-color: #F1CDB3;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css%5D.map */
