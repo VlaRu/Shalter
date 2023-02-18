@@ -7,6 +7,16 @@ document.addEventListener("click", (event) => {
   }
 });
 
-function iconClose() {
+export function iconClose() {
   animalCard.style.display = "none";
 }
+
+//----open modal window
+let allBtnLearn = document.querySelectorAll('.btn-learn-more');
+
+allBtnLearn.forEach((item, index) => { item.addEventListener('click', () => {
+    console.log('hi');
+    animalCard.style.display = 'flex';
+    createModalWindowCard(index)
+  }) 
+})
