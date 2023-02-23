@@ -1,7 +1,7 @@
 import {petsCard} from "./petsCard.js";
 
 export function renderElement() {
-  for (let i = 0; i <= petsCard.length; i++) {
+  for (let i = 0; i < petsCard.length; i++) {
     const myObject = petsCard[i];
     let imageContainer = document.createElement('div');
     let petsContainer= document.querySelectorAll('.container-img-our-friends');
