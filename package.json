@@ -1,0 +1,27 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "@media screen and (max-width: 550px){",
+  "private": true,
+  "scripts": {
+    "style": "sass --watch sass/style.scss style.css",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VlaRu/Shelter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VlaRu/Shelter/issues"
+  },
+  "homepage": "https://github.com/VlaRu/Shelter#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
